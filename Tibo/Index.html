@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8" />
+
+		<!-- Стили -->
+		<link rel="stylesheet" href="css/Reset.css" />
+		<link rel="stylesheet" href="css/Leaflet.css" />
+		<link rel="stylesheet" href="css/Main.css" />
+		<!---->
+
+		<!-- Скрипты -->
+		<script src="js/Settings.js" type="text/javascript"></script>
+		<script src="js/Leaflet.js" type="text/javascript"> </script>
+		<script src="js/Leaflet.ArcGisTileLayer.js" type="text/javascript"></script>
+		<script src="js/Leaflet.GeoserverTileLayer.js" type="text/javascript"></script>
+		<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+		<!---->
+
+		<!-- Данные -->
+
+		<script src="data/JsonRegion.js" type="text/javascript"> </script>
+		<script src="data/JsonRoads.js" type="text/javascript"></script>
+		<script src="data/JsonBuildings.js" type="text/javascript"></script>
+		
+		<!---->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Tibo</title>
+</head>
+<body>
+		<div id="map">
+				<div id="controlPanel" class="controlPanel">
+						<input type="radio"
+									 name="panel"
+									 id="default"
+									 value="default"
+									 checked="checked" />
+						<label for="default">Стилизация №1</label>
+						<br />
+
+						<input type="radio"
+									 name="panel"
+									 id="alexTest"
+									 value="alexTest" />
+						<label for="alexTest">Стилизация №2</label>
+						<br />
+
+						<input type="radio"
+									 name="panel"
+									 id="afs"
+									 value="afs" />
+						<label for="afs">Аэрофотосъемка</label>
+						<br />
+
+						<input type="radio"
+									 name="panel"
+									 id="zis"
+									 value="zis" />
+						<label for="zis">ЗИС</label>
+						<br />
+
+						<input type="radio"
+									 name="panel"
+									 id="landscape"
+									 value="landscape" />
+						<label for="landscape">Ландшафт</label>
+						<br />
+
+						<input type="radio"
+									 name="panel"
+									 id="region"
+									 value="region" />
+						<label for="region">Районы</label>
+						<br />
+
+						<div class="controlPanel-item">
+								<input type="radio"
+											 name="panelRegion"
+											 id="population"
+											 value="population"
+											 checked="checked"
+											 disabled="disabled" />
+								<label for="population">Население</label>
+								<br />
+
+								<input type="radio"
+											 name="panelRegion"
+											 id="square"
+											 value="square"
+											 disabled="disabled" />
+								<label for="square">Площадь</label>
+								<br />
+
+								<input type="radio"
+											 name="panelRegion"
+											 id="paking"
+											 value="paking"
+											 disabled="disabled" />
+								<label for="paking">Плотность</label>
+								<br />
+						</div>
+
+						<input type="radio"
+									 name="panel"
+									 id="geojson"
+									 value="geojson" />
+						<label for="geojson">GeoJSON</label>
+						<br />
+						
+						<input type="radio"
+									 name="panel"
+									 id="history"
+									 value="history" />
+						<label for="history">Исторические карты</label>
+						<br />
+
+						<div class="controlPanel-item">
+								<input type="radio"
+											 name="panelHistory"
+											 id="soviet"
+											 value="soviet"
+											 checked="checked"
+											 disabled="disabled" />
+								<label for="soviet">Минск 1943г.</label>
+								<br />
+
+								<input type="radio"
+											 name="panelHistory"
+											 id="german"
+											 value="german"
+											 disabled="disabled" />
+								<label for="german">Минск (Немецкая) 1944г.</label>
+								<br />
+
+								<input type="radio"
+											 name="panelHistory"
+											 id="3verst"
+											 value="3verst"
+											 disabled="disabled" />
+								<label for="3verst">Трехверстовка 1865г.</label>
+								<br />
+								<input type="checkbox" 
+											 name="hybrid" 
+											 id="hybrid"
+											 disabled="disabled">
+								<label for="hybrid">Гибрид</label>	 
+						</div>
+
+				</div>
+				
+				<div id="infoPanel" class="infoPanel" hidden="hidden">Нажмите на объект <br>для получения информации</div>
+				<div id="legendPanel" class="legendPanel" hidden="hidden"></div>
+
+		</div>
+		<script src="js/Main.js" type="text/javascript"> </script>
+</body>
+
+</html>

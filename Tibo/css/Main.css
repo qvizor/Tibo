@@ -1,0 +1,73 @@
+﻿div#map {
+    background: white; /*можно замостить картинку с надписью maps.by*/
+    position: absolute;
+    height: 98%;
+    width: 99%;
+}
+
+body {
+    background: white;
+}
+
+@font-face {
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bad Script Regular'), local('BadScript-Regular'), url(fonts/BadScript.woff) format('woff');
+}
+
+h1 {
+    font: normal 4em/1.2 'Bad Script', cursive;
+    color: #bbb;
+}
+
+.controlPanel {
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    right: 10px;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    padding: 6px 8px;
+    z-index: 100;
+}
+.controlPanel-item {
+    padding-left: 20px;
+}
+
+.legendPanel {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 6px 8px;
+    z-index: 100;
+}
+
+.infoPanel {
+    margin-top: 315px;
+    margin-left: 10px;
+    position: absolute;
+    right: 10px;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 6px 8px;
+    z-index: 100;
+}
+.legendPanel i {
+    float: left;
+    height: 18px;
+    margin-right: 8px;
+    opacity: 0.7;
+    width: 18px;
+}

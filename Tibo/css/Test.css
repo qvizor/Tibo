@@ -1,0 +1,27 @@
+﻿body {
+}
+
+.panel {
+    position: absolute;
+    width: inherit;
+    background-color: white;
+    border-color: grey;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.legend {
+    margin-left: 100px;
+}
+
+.panel-into {
+    padding-left: 20px;
+}
+
+.legend i {
+    float: left;
+    height: 18px;
+    margin-right: 8px;
+    opacity: 0.7;
+    width: 18px;
+}
